@@ -3,4 +3,6 @@
     "README.md",
     "build.zig",
     "build.zig.zon",
+    "pcg_basic.c",
+    "pcg_basic.h",
 } }
