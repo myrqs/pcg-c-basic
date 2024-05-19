@@ -12,6 +12,6 @@ pub fn build(b: *std.Build) void {
 
     lib.addCSourceFile(.{ .file = b.path("pcg_basic.c") });
     lib.linkLibC();
-    lib.installHeadersDirectory(b.path("."), "pcg_basic", .{ .include_extensions = &.{".h"} });
+    lib.installHeader(.{ .path = "pcg_basic.h" }, "pcg_basic.h");
     b.installArtifact(lib);
 }
